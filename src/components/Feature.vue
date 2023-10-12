@@ -1,0 +1,80 @@
+<!-- <script setup>
+const features = [
+  {
+    iconSrc: "@/assets/icon-1.svg",
+    title: "Point 1",
+    description: "Lorem ipsum",
+  },
+  {
+    iconSrc: "@/assets/icon-2.svg",
+    title: "Point 2",
+    description: "Lorem ipsum",
+  },
+  {
+    iconSrc: "@/assets/icon-3.svg",
+    title: "Point 3",
+    description: "Lorem ipsum",
+  },
+];
+</script>
+<template>
+  <div class="container-fluid">
+    <div class="col-sm-3">
+      <img class="feature-image" src="@/assets/img-2.svg" alt="Image 2" />
+    </div>
+    <div class="col-sm-9 d-flex justify-content-end">
+      <h4>Feature</h4>
+      <figure v-for="feature in features" :key="feature.title">
+        <img class="feature-image" :src="feature.iconSrc" :alt="feature.title" />
+        <figcaption>
+          <h4>{{ feature.title }}</h4>
+          <p>{{ feature.description }}</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</template> -->
+
+
+<script setup>
+const features = [
+  {
+    iconSrc: "@/assets/icon-1.svg",
+    title: "Point 1",
+    description: "Lorem ipsum",
+  },
+  {
+    iconSrc: "@/assets/icon-2.svg",
+    title: "Point 2",
+    description: "Lorem ipsum",
+  },
+  {
+    iconSrc: "@/assets/icon-3.svg",
+    title: "Point 3",
+    description: "Lorem ipsum",
+  },
+];
+</script>
+
+<template>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+        <img class="feature-image" src="@/assets/img-2.svg" alt="Image 2" />
+      </div>
+
+      <div class="col-sm-9">
+        <h4 class="fs-2 fw-bold">FEATURE</h4>
+        <div v-for="feature in features" :key="feature.title" class="mb-4">
+          <div class="d-flex align-items-start">
+            <img class="feature-image" :src="feature.iconSrc" :alt="feature.title" />
+            <div class="ml-3">
+              <h4>{{ feature.title }}</h4>
+              <p>{{ feature.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
