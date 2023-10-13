@@ -59,7 +59,7 @@ const plans = [
           <td>{{ plans[ 1 ].details.offer ? 'O' : '-' }}</td>
         </tr>
         <tr>
-          <th scope="row">Init Cost</th>
+          <th scope="row">Initial Cost</th>
           <td>{{ plans[ 0 ].details.init_cost ? 'O' : '-' }}</td>
           <td>{{ plans[ 1 ].details.init_cost ? 'O' : '-' }}</td>
         </tr>
