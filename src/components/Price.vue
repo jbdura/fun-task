@@ -61,7 +61,7 @@ const prices = [
     <h4 class="fs-2 fw-bold">Price</h4>
     <div class="container">
       <div v-for="(price, index) in prices" :key="index" class="container mb-4">
-        
+
         <h3 class="fs-2" :style="{ color: price.color }">{{ price.title }}</h3>
         <div>
           <h4>{{ price.price }}</h4>
@@ -89,6 +89,8 @@ const prices = [
     <OperatingEnv />
   </div>
 </template>
+
+
 
 
 
