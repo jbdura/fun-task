@@ -16,7 +16,7 @@ const details = [
 
 const QA = [
   {
-    Q: "Q: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    Q: "Q: Minim elit pariatur non do dolore esse ex reprehenderit elit Lorem nulla cupidatat. Magna occaecat deserunt culpa ea nulla et nostrud.",
     A: "A: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }
 ]

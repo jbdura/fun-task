@@ -17,16 +17,24 @@ const prices = [
     price: "$5/month",
     details: {
       title: "feature",
-      desc: [ "lorem ipsum something", "lorem ipsum something", "lorem ipsum something" ],
+      desc: [
+        "Tempor cupidatat voluptate officia culpa laborum enim ex proident culpa eu deserunt.",
+        "In ea cillum ut occaecat sint ullamco aute in qui elit mollit sint proident.",
+        "Fugiat non consequat anim reprehenderit excepteur eu est aute et ea."
+      ],
     },
     option: "Options",
-    optionDesc: [ "lorem ipsum ipsum some some thinggg", "lorem ipsum something", "lorem ipsum something" ],
+    optionDesc: [ 
+      "Non elit quis laborum elit id do tempor anim proident mollit id.", 
+      "Velit irure voluptate deserunt magna ullamco deserunt adipisicing laboris labore fugiat consequat.", 
+      "Sunt consectetur veniam veniam excepteur esse aliqua elit ipsum deserunt exercitation." 
+    ],
     color: "#000080",
     extras: {
       title: "Service provision",
       details: [
-        "lorem ipsum",
-        "lorem ipsum"
+        "Labore amet magna ipsum officia laboris proident cupidatat.",
+        "In exercitation irure consequat sunt exercitation ut sit excepteur eu exercitation mollit."
       ]
     },
     design: designCorner,
@@ -36,16 +44,17 @@ const prices = [
     price: "$5/month",
     details: {
       title: "feature",
-      desc: [ "lorem ipsum something", "lorem ipsum ipsum some some thinggg" ]
+      desc: [ "Ad ipsum laboris laboris exercitation id ex et et nisi voluptate esse eiusmod.", "Ea enim laborum adipisicing ipsum magna." ]
     },
     option: "Options",
-    optionDesc: [ "lorem ipsum ipsum some some thinggg", "lorem ipsum something", "lorem ipsum something" ],
+    optionDesc: [ "Magna enim aute excepteur do do reprehenderit do et ea aliqua in tempor elit exercitation.",
+      "Labore nulla laboris amet sunt nisi pariatur pariatur." ],
     color: "#FF5733",
     extras: {
       title: "Caution",
       details: [
-        "lorem ipsum",
-        "lorem ipsum"
+        "Do veniam officia mollit id magna in cupidatat minim nostrud sunt nostrud est veniam.",
+        "Minim sint ad anim incididunt ea est exercitation incididunt.  "
       ]
     },
     design: designCorner2,
@@ -59,33 +68,43 @@ const prices = [
 <template>
   <div class="container-fluid px-5 py -5 pt-3">
     <h4 class="fs-2 fw-bold">Price</h4>
-    <div class="container">
-      <div v-for="(price, index) in prices" :key="index" class="container mb-4">
+    <!-- <div class="float-end">
+      <img class="feature-image z-n1" src="@/assets/img-3.svg" alt="Image 3" />
+    </div> -->
+    <div class="container z-0">
+      <div class="container">
+        <div v-for="(price, index) in prices" :key="index" class="container mb-4">
 
-        <h3 class="fs-2" :style="{ color: price.color }">{{ price.title }}</h3>
-        <div>
-          <h4>{{ price.price }}</h4>
-          <h5>{{ price.details.title }}</h5>
+          <h3 class="fs-2" :style="{ color: price.color }">{{ price.title }}</h3>
+          <div>
+            <h4>{{ price.price }}</h4>
+            <h5>{{ price.details.title }}</h5>
+            <ul>
+              <li v-for="(desc, descIndex) in price.details.desc" :key="descIndex">{{ desc }}</li>
+            </ul>
+          </div>
+          <h5>{{ price.option }}</h5>
           <ul>
-            <li v-for="(desc, descIndex) in price.details.desc" :key="descIndex">{{ desc }}</li>
+            <li v-for="(optionDesc, optionIndex) in price.optionDesc" :key="optionIndex">{{ optionDesc }}</li>
+          </ul>
+
+          <hr class="my-4">
+
+          <h4>{{ price.extras.title }}</h4>
+          <ul>
+            <li v-for="(detail, detailIndex) in price.extras.details" :key="detailIndex">{{ detail }}</li>
           </ul>
         </div>
-        <h5>{{ price.option }}</h5>
-        <ul>
-          <li v-for="(optionDesc, optionIndex) in price.optionDesc" :key="optionIndex">{{ optionDesc }}</li>
-        </ul>
-
-        <hr class="my-4">
-
-        <h4>{{ price.extras.title }}</h4>
-        <ul>
-          <li v-for="(detail, detailIndex) in price.extras.details" :key="detailIndex">{{ detail }}</li>
-        </ul>
       </div>
     </div>
+
+
     <br>
     <OptionPlan />
     <br>
+    <!-- <div class="z-n1">
+      <img class="feature-image " src="@/assets/img-4.svg" alt="Image 4" />
+    </div> -->
     <OperatingEnv />
   </div>
 </template>

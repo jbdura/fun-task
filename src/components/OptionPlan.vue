@@ -20,25 +20,25 @@ const details = [
   {
     title: "Support Plan",
     price: "$10/month",
-    details: "Lorem ipsum",
+    details: "Sunt dolore laboris anim ea consectetur occaecat tempor velit culpa deserunt exercitation sint.",
     design: design1 
   },
   {
     title: "Basic customize",
     price: "$20/month",
-    details: "Lorem ipsum",
+    details: "Proident consectetur Lorem irure proident enim quis.",
     design: design2
     },
   {
     title: "Pro customize",
     price: "$100/month",
-    details: "Lorem ipsum",
+    details: "Eu cillum ipsum velit cupidatat anim cillum veniam incididunt.",
     design: design3
     },
   {
     title: "Other customize",
     price: "Contact us",
-    details: "Lorem ipsum",
+    details: "Labore dolor laboris adipisicing incididunt tempor aliqua labore minim nostrud labore.",
     design: design4
   },
 ]
