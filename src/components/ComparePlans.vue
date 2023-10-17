@@ -30,11 +30,11 @@ const plans = [
   <div class="container-fluid px-5 py-5" style="background-color: #F4F4F4;">
     <h4 class="fs-2 fw-bold">Compare Plans</h4>
     <table class="table">
-      <thead>
+      <thead class="text-center text-light">
         <tr>
           <th scope="col"></th>
-          <th scope="col">Subscription Plan</th>
-          <th scope="col">Purchase Plan</th>
+          <th scope="col" style="background-color: #1E2369;">Subscription Plan</th>
+          <th scope="col" style="background-color: #D82B1B; ">Purchase Plan</th>
         </tr>
       </thead>
       <tbody>

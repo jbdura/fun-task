@@ -11,7 +11,7 @@ import Contact from '../components/Contact.vue';
 </script>
 
 <template>
-  <main class="container-pt-5">
+  <main class="pt-5">
     <!-- <Nav /> -->
     <Home />
     <Feature />
