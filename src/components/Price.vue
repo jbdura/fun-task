@@ -24,10 +24,10 @@ const prices = [
       ],
     },
     option: "Options",
-    optionDesc: [ 
-      "Non elit quis laborum elit id do tempor anim proident mollit id.", 
-      "Velit irure voluptate deserunt magna ullamco deserunt adipisicing laboris labore fugiat consequat.", 
-      "Sunt consectetur veniam veniam excepteur esse aliqua elit ipsum deserunt exercitation." 
+    optionDesc: [
+      "Non elit quis laborum elit id do tempor anim proident mollit id.",
+      "Velit irure voluptate deserunt magna ullamco deserunt adipisicing laboris labore fugiat consequat.",
+      "Sunt consectetur veniam veniam excepteur esse aliqua elit ipsum deserunt exercitation."
     ],
     color: "#000080",
     extras: {
@@ -63,14 +63,16 @@ const prices = [
 </script>
 
 
-
+<!-- 
 
 <template>
   <div class="container-fluid px-5 py -5 pt-3">
     <h4 class="fs-2 fw-bold">Price</h4>
-    <!-- <div class="float-end">
+
+    <div class="float-end">
       <img class="feature-image z-n1" src="@/assets/img-3.svg" alt="Image 3" />
-    </div> -->
+    </div>
+
     <div class="container z-0">
       <div class="container">
         <div v-for="(price, index) in prices" :key="index" class="container mb-4">
@@ -102,16 +104,114 @@ const prices = [
     <br>
     <OptionPlan />
     <br>
-    <!-- <div class="z-n1">
+
+    <div class="z-n1">
       <img class="feature-image " src="@/assets/img-4.svg" alt="Image 4" />
-    </div> -->
+    </div>
+
+    <OperatingEnv />
+  </div>
+</template>
+ -->
+
+
+<template>
+  <div class="relative container-fluid px-5 py-5 pt-3 ">
+    <div class="float-end absolute img2-cont">
+      <img class="feature-image z-n1 " src="@/assets/img-3.svg" alt="Image 3" />
+    </div>
+    <h4 class="fs-2 fw-bold">Price</h4>
+
+    <div class="row z-1">
+      <!-- Subscription Plan Card -->
+      <div class="container col-9 mb-4">
+        <div class="card ">
+          <div class="card-body">
+
+            <h3 class="fs-2 text-primary">Subscription Plan</h3>
+            <p class="fs-4">$5/month</p>
+            <h5 class="fs-4">Features</h5>
+            <ul>
+              <li>Tempor cupidatat voluptate officia culpa laborum enim ex proident culpa eu deserunt.</li>
+              <li>In ea cillum ut occaecat sint ullamco aute in qui elit mollit sint proident.</li>
+              <li>Fugiat non consequat anim reprehenderit excepteur eu est aute ea.</li>
+            </ul>
+            <h5 class="fs-4">Options</h5>
+            <ul>
+              <li>Non elit quis laborum elit id do tempor anim proident mollit id.</li>
+              <li>Velit irure voluptate deserunt magna ullamco deserunt adipisicing laboris labore fugiat consequat.</li>
+              <li>Sunt consectetur veniam veniam excepteur esse aliqua elit ipsum deserunt exercitation.</li>
+            </ul>
+            <hr class="my-4">
+
+            <h5 class="fs-4">Service Provision</h5>
+            <ul>
+              <li>Labore amet magna ipsum officia laboris proident cupidatat.</li>
+              <li>In exercitation irure consequat sunt exercitation ut sit excepteur eu exercitation mollit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Purchase Plan Card -->
+      <div class="container col-md-10 mb-4">
+        <div class="z-n1 absolute img1-cont">
+          <img class="feature-image " src="@/assets/img-4.svg" alt="Image 4" />
+        </div>
+        <div class="card">
+          <div class="card-body">
+
+            <h3 class="fs-2 text-danger">Purchase Plan</h3>
+            <p class="fs-4">$5/month</p>
+            <h5 class="fs-4">Features</h5>
+            <ul>
+              <li>Ad ipsum laboris laboris exercitation id ex et et nisi voluptate esse eiusmod.</li>
+              <li>Ea enim laborum adipisicing ipsum magna.</li>
+            </ul>
+
+            <h5 class="fs-4">Options</h5>
+            <ul>
+              <li>Magna enim aute excepteur do do reprehenderit do et ea aliqua in tempor elit exercitation.</li>
+              <li>Labore nulla laboris amet sunt nisi pariatur pariatur.</li>
+            </ul>
+            <hr class="my-4">
+
+            <h5 class="fs-4">Caution</h5>
+            <ul>
+              <li>Do veniam officia mollit id magna in cupidatat minim nostrud sunt nostrud est veniam.</li>
+              <li>Minim sint ad anim incididunt ea est exercitation incididunt.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <OptionPlan />
+
+    <br>
+
     <OperatingEnv />
   </div>
 </template>
 
+<style>
+.relative {
+  position: relative;
+}
 
+.absolute {
+  position: absolute;
+}
 
+.img1-cont {
+  left: -12em;
+}
 
+.img2-cont {
+  right: -20em;
+}
+</style> 
 
 
 <!-- <template>
@@ -148,3 +248,4 @@ const prices = [
   </div>
 </template>
  -->
+
